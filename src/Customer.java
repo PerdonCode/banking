@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class Customer {
     private String name;
-    private ArrayList<Double> transaction;
+    private ArrayList<Double> transactions;
 
-    public Customer(String name, Double transaction) {
+    public Customer(String name, Double transactions) {
         this.name = name;
-        this.transaction = new ArrayList<>();
+        this.transactions = new ArrayList<>();
     }
     public void addTransaction(double transaction){
-        this.transaction.add(transaction);
+        this.transactions.add(transaction);
     }
     public String getName() {
         return name;
     }
 
-    public ArrayList<Double> getTransaction() {
-        return transaction;
+    public ArrayList<Double> getTransactions() {
+        return transactions;
     }
 }
