@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Branch {
     private static String name;
@@ -26,10 +25,12 @@ public class Branch {
         }
         return false;
     }
-    public static boolean addCustomerTransaction(String nameOfBranch, String nameOfCustomer, Double transaction){
+    public  boolean addCustomerTransaction(String nameOfCustomer, Double transaction){
         if (findCustomer(nameOfCustomer) != null){
-
+           findCustomer(nameOfCustomer).addTransaction(transaction);
+            return true;
         }
+        return false;
     }
 
     public static Customer findCustomer(String nameOfCustomer){
