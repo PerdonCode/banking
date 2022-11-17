@@ -8,17 +8,14 @@ public class Customer {
         this.name = name;
         this.transaction = new ArrayList<>();
     }
-
+    public void addTransaction(double transaction){
+        this.transaction.add(transaction);
+    }
     public String getName() {
         return name;
     }
 
     public ArrayList<Double> getTransaction() {
         return transaction;
-    }
-
-    public static void addTransaction(double transaction){
-        // add to what?
-
     }
 }
